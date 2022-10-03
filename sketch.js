@@ -79,6 +79,8 @@ function mousePressed() {
 		counter=0;
 	}
 }
-function touchMoved(){
-	return false;
+function touchStarted() {
+	if (keyCode === RIGHT_ARROW) {
+		counter=0;
+	}
   }
