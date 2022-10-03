@@ -79,3 +79,6 @@ function mousePressed() {
 		counter=0;
 	}
 }
+function touchMoved(){
+	return false;
+  }
