@@ -34,11 +34,16 @@ function draw() {
 }
 
 function keyPressed() {
+	if (keyCode === RIGHT_ARROW) {
 	ranNum = int(random(item_count));
-	//console.log(ranNum);
+	}
 }
 
 function mousePressed() {
 	ranNum = int(random(item_count));
-	//console.log(ranNum);
+	//saveCanvas('myCanvas', 'png');
+}
+
+function addComment(){
+	
 }
