@@ -23,12 +23,14 @@ function setup() {
 		img[i] = loadImage("artworks/" + file_name[i] + ".jpg");
 		text_titles[i] = title[i];
 	}
+	textAlign(CENTER);
 }
 
 function draw() {
-	background(255);
-	image(img[ranNum], 0, 0);
-	text(text_titles[ranNum], 10, 30);
+	background('#eee');
+	let scaler = 0.75;
+	image(img[ranNum], windowWidth/2-img[ranNum].width*scaler/2, windowHeight/2-img[ranNum].height*scaler/2,img[ranNum].width*scaler,img[ranNum].height*scaler);
+	text(text_titles[ranNum], width/2, 30);
 }
 
 function keyPressed() {
@@ -36,3 +38,7 @@ function keyPressed() {
 	//console.log(ranNum);
 }
 
+function mousePressed() {
+	ranNum = int(random(item_count));
+	//console.log(ranNum);
+}
