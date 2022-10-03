@@ -20,7 +20,9 @@ function setup() {
 	title = table.getColumn('title');
 	createCanvas(windowWidth, windowHeight);
 	for (i = 0; i < item_count; i++) {
-		img[i] = loadImage("artworks/" + file_name[i] + ".jpg");
+	//	img[i] = loadImage("artworks/" + file_name[i] + ".jpg");
+	img[i] = loadImage(file_name[i]);
+console.log(img);
 		text_titles[i] = title[i];
 	}
 	textAlign(CENTER);
@@ -45,5 +47,5 @@ function mousePressed() {
 }
 
 function addComment(){
-	
+
 }
