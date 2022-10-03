@@ -75,12 +75,8 @@ function keyPressed() {
 }
 
 function mousePressed() {
-	if (keyCode === RIGHT_ARROW) {
 		counter=0;
-	}
 }
 function touchStarted() {
-	if (keyCode === RIGHT_ARROW) {
 		counter=0;
-	}
   }
