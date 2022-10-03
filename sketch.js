@@ -74,8 +74,8 @@ function keyPressed() {
 	}
 }
 
-// function mousePressed() {
-// 	if (keyCode === RIGHT_ARROW) {
-// 		counter=0;
-// 	}
-// }
+function mousePressed() {
+	if (keyCode === RIGHT_ARROW) {
+		counter=0;
+	}
+}
